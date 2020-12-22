@@ -1,0 +1,44 @@
+[
+  {
+    "category": "design",
+    "title": "",
+    "description": "",
+    "knowledges": [
+
+    ],
+    "softwares": [
+      { "name": "", "skill": "" }
+    ]
+  },
+  {
+    "category": "video editing",
+    "title": "",
+    "description": "",
+    "knowledges": [
+
+    ],
+    "softwares": [
+      { "name": "", "skill": "" }
+    ]
+  }, {
+    "category": "motion graphic",
+    "title": "",
+    "description": "",
+    "knowledges": [
+
+    ],
+    "softwares": [
+      { "name": "", "skill": "" }
+    ]
+  }, {
+    "category": "programming",
+    "title": "",
+    "description": "",
+    "knowledges": [
+
+    ],
+    "softwares": [
+      { "name": "", "skill": "" }
+    ]
+  }
+]

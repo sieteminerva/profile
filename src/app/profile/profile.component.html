@@ -1,0 +1,18 @@
+<mat-sidenav-container class="main-container">
+  <mat-sidenav class="minerva-sidenav" mode="side" opened>
+    <mat-nav-list>
+      <mat-list-item *ngFor="let item of links; let i = index;" (click)="navigateTo(item)">
+        <a matLine>{{ item.title }}</a>
+        <!-- <button mat-icon-button>
+        <mat-icon>{{ item.icon }}</mat-icon>
+      </button> -->
+      </mat-list-item>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="minerva-content" [@horizontalSlide]="getState(outlet)" style="overflow: hidden;">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

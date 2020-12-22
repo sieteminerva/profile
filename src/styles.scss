@@ -1,1 +1,63 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$sieteminerva-primary: mat-palette($mat-indigo);
+$sieteminerva-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$sieteminerva-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$sieteminerva-theme: mat-light-theme($sieteminerva-primary, $sieteminerva-accent, $sieteminerva-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($sieteminerva-theme);
+
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+// variable color
+$dark-color: rgb(31, 37, 45);
+$homepage-bg: salmon;
+$about-bg: sandybrown;
+$skills-bg: yellowgreen;
+$experiences-bg: rgb(158, 23, 129);
+$educations-bg: rgb(96, 160, 244);
+$portfolio-bg: rgb(63, 207, 171);
+$contact-bg: rgb(212, 244, 96);
+$blog-bg: rgb(244, 96, 224);
+
+
+.persona.header {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 100%;
+  color: $dark-color;
+  padding: 2px 8px;
+}

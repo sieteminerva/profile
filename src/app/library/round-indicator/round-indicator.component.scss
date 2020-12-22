@@ -1,0 +1,29 @@
+.spinner-container {
+  padding: 8px;
+  width: 100%;
+  max-height: 200px;
+}
+
+.spinner {
+  display: block;
+}
+
+.spinner-value {
+  display:block;
+  position:relative;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.right-side {
+  margin-left: 16px;
+}
+
+.title {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
